@@ -7,9 +7,17 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-
+/**
+ * Simple rest assured test suite using TestNG to drive the suite
+ * 
+ * @author adityai
+ *
+ */
 public class NewTest {
 
+	/**
+	 * Simple get request response verification 
+	 */
 	@Test
 	public void testGetDataGovPackageSearch(){
 		Response response = RestAssured.given().contentType("application/json").when().get("https://catalog.data.gov/api/3/action/package_search");
@@ -26,6 +34,10 @@ public class NewTest {
 	}
 	
 	//WIP - returns Bad requet - JSON Error: No request body data
+	/**
+	 * Simple post request response verification
+	 * 
+	 */
 	@Test
 	public void testPostDataGovPackageCreate(){
 		Response response = RestAssured.given().contentType("application/json").body("{\"name\": \"myDataSet\"}").when().post("https://catalog.data.gov/api/3/action/package_create");
