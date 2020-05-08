@@ -20,6 +20,13 @@ import io.restassured.response.Response;
  */
 public class NewTest {
 
+	@Test
+	public void testFileUpload() {
+		RestAssured.given()
+			.contentType("multipart/form-data")
+			.when().given().multiPart("file", "README.md").post("http://localhost:3000");
+	}
+	
 	/**
 	 * Simple get request response verification 
 	 */
