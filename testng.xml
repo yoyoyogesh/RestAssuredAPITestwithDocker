@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API Tests Suite" parallel="tests" thread-count="4">
+    <test name="API Test 1">
+        <classes>
+            <class name="com.iaditya.testng.rest_assured_sample.NewTest"/>
+        </classes>
+    </test>
+    <test name="API Test 2">
+        <classes>
+            <class name="com.iaditya.testng.rest_assured_sample.NewTest2"/>
+        </classes>
+    </test>
+    <test name="API Test 3">
+        <classes>
+            <class name="com.iaditya.testng.rest_assured_sample.NewTest3"/>
+        </classes>
+    </test>
+    <!-- Add more <test> elements for additional tests -->
+</suite>

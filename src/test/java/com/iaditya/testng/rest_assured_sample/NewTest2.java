@@ -1,17 +1,12 @@
 package com.iaditya.testng.rest_assured_sample;
 
-import static org.hamcrest.CoreMatchers.hasItem;
-import static org.hamcrest.CoreMatchers.hasItems;
-import static org.hamcrest.Matchers.equalTo;
-
+import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
-import static io.restassured.RestAssured.withArgs;
-
-import io.restassured.response.Response;
+import static org.hamcrest.Matchers.equalTo;
 
 
 /**
@@ -20,7 +15,7 @@ import io.restassured.response.Response;
  * @author adityai
  *
  */
-public class NewTest {
+public class NewTest2 {
 
 /*	@Test
 	public void testFileUpload() {
