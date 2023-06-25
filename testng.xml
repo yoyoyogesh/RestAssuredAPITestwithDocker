@@ -15,5 +15,6 @@
             <class name="com.iaditya.testng.rest_assured_sample.NewTest3"/>
         </classes>
     </test>
+
     <!-- Add more <test> elements for additional tests -->
 </suite>
